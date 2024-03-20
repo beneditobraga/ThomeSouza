@@ -5,40 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pai Thomé de Souza</title>
     <style>
-        .title {
+        #header {
             color: rgb(17, 128, 94);
-            width: 60%;
+            width: 50%;
             margin-left: auto;
             margin-right: auto;
             background-color: white;
         }
+        #about {
+            font-size: 15px; 
+            color:rgb(138, 153, 148); 
+            margin-left: 49%; 
+            margin-top: -2.5%;
+        }
         body {
-            background-image: url("background-test.jpg");
-            height: 98vw;
-            background-size: 100%; /*Imagem escalada toda no fundo*/
+            background-image: url("fundo.jpg");
+            height: 130vw;
+            /*Imagem escalada toda no fundo*/
+            background-size: 110%; 
             background-position: right center;
-            background-repeat: no-repeat; /*Para imagem não se repetir ao mudar tamanho da janela*/
+            /*Para imagem não se repetir ao mudar tamanho da janela*/
+            background-repeat: no-repeat; 
             background-color: white;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
-        
+        .titlebody h2 {
+            font-size: 10px;
+        }
+        .titlebody p {
+            font-size: 30px;
+        }
+        #hr_baseboard {
+
+        }
+        #baseboard {
+            margin-top: 70%;
+        }
     </style>
 </head>
     <body>
-        <h1 class="title">Pai Thomé de Souza</h1>
-        <h2 style="font-size: 15px; color:rgb(138, 153, 148); margin-left: 80%; font-weight: bold;">Tenda de Umbanda</h2>
-        <section>
-            <h2>História</h2>
-                <p></p>
-            <h2>Horários e Funcionamento</h2>
-            <h2></h2>
+        <h1 id="header">Pai Thomé de Souza</h1>
+        <h2 id="about">Tenda de Umbanda</h2>
+        <section class="titlebody">
+            <div>
+                <h2>SOBRE</h2>
+                    <p></p>
+                <h2>FUNCIONAMENTO</h2>
+                    <p></p>
+                    <p>Rua - </p>
+            </div>
         </section>  
-        <footer>
-            <h1 style="font-size: 17px;">Sobre</h1>
+        <hr id="hr_baseboard">
+        <footer id="baseboard">
             <p>Facebook</p>
             <p>Instagram</p>
             <p>YouTube</p>
-            <p>Endereço</p>
         </footer>
     </body>
 </html>

@@ -5,61 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pai Thomé de Souza</title>
     <style>
-        #header {
-            color: rgb(17, 128, 94);
-            width: 50%;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: white;
-        }
-        #about {
-            font-size: 15px; 
-            color:rgb(138, 153, 148); 
-            margin-left: 49%; 
-            margin-top: -2.5%;
-        }
-        body {
-            /*background-image: url("fundo.jpg");*/
-            height: 130vw;
-            /*Imagem escalada toda no fundo*/
-            background-size: 110%; 
-            background-position: right center;
-            /*Para imagem não se repetir ao mudar tamanho da janela*/
-            background-repeat: no-repeat; 
-            background-color: white;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        .titlebody h2 {
-            font-size: 10px;
-        }
-        .titlebody p {
-            font-size: 30px;
-        }
-        #hr_baseboard {
-
-        }
-        #baseboard {
-            margin-top: 70%;
-        }
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+       }
+       body {
+        background-color: white;
+       }
+       header {
+        background-image: url('index04.jpg');
+        background-position: center;
+        background-size: cover; /*Toda altura e largura disponível*/
+        background-attachment: fixed;
+       }
+       nav {
+        display: flex; /*Elementos do site um ao lado do outrop*/
+        align-items: center; /*Ajusta itens*/
+        justify-content:center; /*Local dos elementos*/
+        padding-top: 30px;
+       }
+       nav ul {
+        display: flex;
+        align-items: center;
+       }
+       /* IDs */
+       #apresentacao {
+        padding: 54px 0; /*Espaçamento da seção*/
+       }
+       #conteudo {
+        max-width: 1400px; /*Largura máxima*/
+        margin: 0 auto; /*Margem automárica para os dois lados*/
+        padding: 5%;
+       }
+       
     </style>
 </head>
     <body>
-        <h1 id="header">Pai Thomé de Souza</h1>
-        <h2 id="about">Tenda de Umbanda</h2>
-        <section class="titlebody">
-            <div>
-                <h2>SOBRE</h2>
-                    <p></p>
-                <h2>FUNCIONAMENTO</h2>
-                    <p></p>
-                    <p>Rua - </p>
+        <!--Parte inicial-->
+       <header>
+            <!--Menu Inicial-->
+            <div id="conteudo">
+                <!--Aponta para a mesma página (atualiza a página)-->
+                <nav>
+                    <a href="index.html">
+
+                        <img src="" alt="Logo">
+                    </a>
+                    <!--Seleção de menus para suas respectivas paǵinas-->
+                    <ul class="menus">
+                        <a href="index.html">Home</a>
+                        <a href="sobre.html">Sobre</a>
+                        <a href="contatos.html">Contatos</a>
+                    </ul>
+                </nav>
+                <section id="apresentacao">
+                    <h1>Thomé de Souza</h1>
+                    <p>Tenda de Umbanda</p>
+                    <a href="sobre.html" class="bthis">História</a>
+                </section>
             </div>
-        </section>  
-        <hr id="hr_baseboard">
-        <footer id="baseboard">
-            <p>Facebook</p>
-            <p>Instagram</p>
-            <p>YouTube</p>
-        </footer>
+       </header>
+       <!--Final da parte inicial-->
     </body>
 </html>

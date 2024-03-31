@@ -26,7 +26,7 @@
         display: flex; /*Elementos do site um ao lado do outrop*/
         align-items: center; /*Ajusta itens*/
         justify-content:center; /*Local dos elementos*/
-        padding-top: 10px;
+        padding-top: 8px;
        }
        nav ul {
         display: flex;
@@ -35,10 +35,10 @@
        nav ul a {
         color: black;
         border-color: red;
-        
-        margin: 0 25PX; /*Espaçamento entre as opções*/
-        font-size: 18PX;
+        margin: 0 20PX; /*Espaçamento entre as opções*/
+        font-size:  15PX;
         display: block; /*Não deixa cor no texto após clicar no link*/
+        margin-bottom: 300px;
        }
        nav ul a:not(.btn):after {
         content: "";
@@ -62,6 +62,27 @@
        .btn:hover {
         background-color: #e92626; /*Altera a cor do elemento ao passar o mouse*/
        }
+       .historia {
+        display: flex;
+        align-items: center;
+        
+       }
+       .historia .textohistoria {
+        width: 50%;
+        padding: 0 40px;
+       }
+       .historia .textohistoria h2 {
+        margin-bottom: 0 auto;
+        
+       }
+       .historia .imghistoria {
+         width: 50%;
+         
+       }
+       .historia .imghistoria img {
+        width: 100%;
+        border-radius: 100px;
+       }
        /* IDs */
        #btnhinferior, #btncosme {
         color: white;
@@ -78,23 +99,37 @@
         background-color: #1e8c13;
         padding: 17px 11px;
         font-size: 17px;
+        animation: animate-outline 0.8s ease-out infinite;
        }
        #btncosme:hover {
         background-color: #2bc51c;
+       }
+       @keyframes animate-outline {
+        from {
+            outline: 0px solid #2bc51c;
+        }
+        to {
+            outline: 7.5px solid #c1debe;
+        }
        }
        #apresentacao {
         padding: 54px 0; /*Espaçamento da seção*/
         display: flex;
         justify-content: center;
-        margin: 150px;
+        margin: 100px;
         text-align: center;
         padding: 0 90px;
         display: block;
        }
        #conteudo {
-        max-width: 1400px; /*Largura máxima*/
+        max-width: 1300px; /*Largura máxima*/
         margin: 0 auto; /*Margem automárica para os dois lados*/
-        padding: 5%;
+        padding: 2%;
+       }
+       #conteudo img {
+        margin-bottom: 150px;
+        justify-content: left;
+        
        }
        #bannertexto {
         font-size: 20px;
@@ -102,6 +137,7 @@
         font-weight: lighter;
         margin: 18px 0;
        }
+       
     </style>
 </head>
     <body>
@@ -112,22 +148,61 @@
                 <!--Aponta para a mesma página (atualiza a página)-->
                 <nav>
                     <a href="index.html">
-
                         <img src="logo.png" alt="Logo" style="max-width: 40%; max-height: 40%; display: block;">
                     </a>
                     <!--Seleção de menus para suas respectivas paǵinas-->
-                    <ul class="menus">
+                    <ul>
                         <a href="index.html">HOME</a>
-                        <a href="sobre.html">SOBRE</a>
-                        <a href="artigos.html">ARTIGOS</a>
+                        <a href="sobre.html">ARTIGOS</a>
+                        <a href="artigos.html">SOBRE</a>
                         <a class="btn" href="contatos.html" style="color: white; border-color: black;">CONTATOS</a>
                     </ul>
                 </nav>
                 <section id="apresentacao">
                     <h1 style="font-size: 50px; color: black;">Thomé de Souza</h1>
                     <p id="bannertexto">Tenda de Umbanda</p>
-                    <a href="sobre.html" id="btnhinferior">História</a>
+                    <a href="história.html" id="btnhinferior">História</a>
                     <a href="cosmeedamiao.html" id="btncosme">Cosme e Damião</a>
+                    <a href="sobre.html" id="btnhinferior">  Doe  </a>
+                </section>
+                <section class="historia">
+                    <div class="textohistoria">
+                        <h2 style="font-size: 30px; color: rgb(77, 75, 75);">Pai Thomé de Souza</h2>
+                        <h3 style="font-size: 12px; color: rgb(144, 140, 140);">Tenda de Umbanda</h3>
+                        <br>
+                            <p>
+                                Na década de 90...aqui será contada a história da tenda e do Pai Thomé
+                                ...aqui será contada a história da tenda e do Pai Thomé
+                                ...aqui será contada a história da tenda e do Pai Thomé
+                                ...aqui será contada a história da tenda e do Pai Thomé
+                                ...aqui será contada a história da tenda e do Pai Thomé
+                                <br>
+                                <br>
+                                ...aqui será contada a história da tenda e do Pai Thomé
+                                ...aqui será contada a história da tenda e do Pai Thomé
+                                ...aqui será contada a história da tenda e do Pai Thomé
+                                ...aqui será contada a história da tenda e do Pai Thomé
+                                ...aqui será contada a história da tenda e do Pai Thomé
+                                <br>
+                                <br>
+                                ...aqui será contada a história da tenda e do Pai Thomé
+                                ...aqui será contada a história da tenda e do Pai Thomé
+                                ...aqui será contada a história da tenda e do Pai Thomé
+                                ...aqui será contada a história da tenda e do Pai Thomé
+                                ...aqui será contada a história da tenda e do Pai Thomé
+                                <br>
+                                <br>
+                                ...aqui será contada a história da tenda e do Pai Thomé
+                                ...aqui será contada a história da tenda e do Pai Thomé
+                                ...aqui será contada a história da tenda e do Pai Thomé
+                                ...aqui será contada a história da tenda e do Pai Thomé
+                                ...aqui será contada a história da tenda e do Pai Thomé
+                            </p>
+                    </div>
+                    <div class="imghistoria">
+                        <img src="PaiThome.jpeg" alt="Imagem de Pai Thomé">
+
+                    </div>
                 </section>
             </div>
        </header>

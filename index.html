@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pai Thomé de Souza</title>
-    <link rel="icon" href="TitleWeb.png">
+    <link rel="icon" href="/Images/TitleWeb.png">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.5.0/css/all.css">
     <style>
        *{
         margin: 0;
@@ -17,7 +18,7 @@
         background-color: white;
        }
        header {
-        background-image: url('simbol03.png');
+        background-image: url('/Images/simbol.png');
         background-position: center;
         background-size: cover; /*Toda altura e largura disponível*/
         background-attachment: fixed;
@@ -137,7 +138,25 @@
         font-weight: lighter;
         margin: 18px 0;
        }
-       
+       .footer {
+        background-color: white;
+        text-align: center;
+        border-radius: 32px;
+        padding: 20px;
+       }
+       .footer i {
+        font-size:30px;
+        padding: 25px;
+        margin: 3px;
+        border-radius: 10px;
+       }
+       .footer a {
+        color: black;
+       }
+       .footer p {
+        margin-top: 10px;
+        color: rgb(82, 82, 82);
+       }
     </style>
 </head>
     <body>
@@ -148,7 +167,7 @@
                 <!--Aponta para a mesma página (atualiza a página)-->
                 <nav>
                     <a href="index.html">
-                        <img src="logo.png" alt="Logo" style="max-width: 40%; max-height: 40%; display: block;">
+                        <img src="/Images/logo.png" alt="Logo" style="max-width: 40%; max-height: 40%; display: block;">
                     </a>
                     <!--Seleção de menus para suas respectivas paǵinas-->
                     <ul>
@@ -200,10 +219,18 @@
                             </p>
                     </div>
                     <div class="imghistoria">
-                        <img src="PaiThome.jpeg" alt="Imagem de Pai Thomé">
+                        <img src="/Images/PaiThome.jpeg" alt="Imagem de Pai Thomé">
 
                     </div>
                 </section>
+                <footer class="footer">
+                    <div clas="links">
+                        <a href="#"><i class="fa-brands fa-facebook" style="color: rgb(39, 39, 155);"></i>facebook</a>
+                        <a href="#"><i class="fa-brands fa-instagram" style="color: rgb(150, 57, 33)"></i>instagram</a>
+                        <a href="#"><i class="fa-brands fa-youtube" style="color: rgb(240, 13, 13);"></i>YouTube</a>
+                    </div>
+                    <p>Sigam nossas redes</p>
+                </footer>
             </div>
        </header>
        <!--Final da parte inicial-->

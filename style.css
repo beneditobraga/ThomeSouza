@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+   body {
+    background-color: white;
+   }
+   header {
+    background-image: url('/Images/simbol.png');
+    background-position: center;
+    background-size: cover; /*Toda altura e largura disponível*/
+    background-attachment: fixed;
+   }
+   nav {
+    display: flex; /*Elementos do site um ao lado do outrop*/
+    align-items: center; /*Ajusta itens*/
+    justify-content:center; /*Local dos elementos*/
+    padding-top: 8px;
+   }
+   nav ul {
+    display: flex;
+    align-items: center;
+   }
+   nav ul a {
+    color: black;
+    border-color: red;
+    margin: 0 20PX; /*Espaçamento entre as opções*/
+    font-size:  15PX;
+    display: block; /*Não deixa cor no texto após clicar no link*/
+    
+   }
+   nav ul a:not(.btn):after {
+    content: "";
+    background-color: red;
+    height: 3px;
+    width: 0%;
+    display: block;
+    transition: 0.6s;
+   }
+   nav ul a:hover::after {
+    width: 100%;
+   }
+   /* Menu Mobile */
+   nav .menu-icon {
+    cursor: pointer;
+    font-size: 25px;
+    display: none;
+   }
+   /* CLASSs */
+   .btn {
+    background-color: #C80000;
+    padding: 15px 20px;
+    border-radius: 14px;
+    display: inline-block;
+    transition: 0.4s; /*Animação ao passar o mouse sobre*/
+   }
+   .btn:hover {
+    background-color: #e92626; /*Altera a cor do elemento ao passar o mouse*/
+   }
+   .historia {
+    display: flex;
+    align-items: center;
+    
+   }
+   .historia .textohistoria {
+    width: 50%;
+    padding: 0 40px;
+   }
+   .historia .textohistoria h2 {
+    margin-bottom: 0 auto;
+    
+   }
+   .historia .imghistoria {
+     width: 50%;
+     
+   }
+   .historia .imghistoria img {
+    width: 100%;
+    border-radius: 100px;
+   }
+   /* IDs */
+   #btnhinferior, #btncosme {
+    color: white;
+    background-color: #C80000;
+    padding: 8px 18px;
+    border-radius: 9px;
+    display: inline-block;
+    transition: 0.4s;
+   }
+   #btnhinferior:hover {
+    background-color: #e92626;
+   }
+   #btncosme {
+    background-color: #1e8c13;
+    padding: 17px 11px;
+    font-size: 17px;
+    animation: animate-outline 0.8s ease-out infinite;
+   }
+   #btncosme:hover {
+    background-color: #2bc51c;
+   }
+   @keyframes animate-outline {
+    from {
+        outline: 0px solid #2bc51c;
+    }
+    to {
+        outline: 7.5px solid #c1debe;
+    }
+   }
+   #apresentacao {
+    padding: 54px 0; /*Espaçamento da seção*/
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    text-align: center;
+    padding: 0 90px;
+    display: block;
+   }
+   #conteudo {
+    max-width: 1300px; /*Largura máxima*/
+    margin: 0 auto; /*Margem automárica para os dois lados*/
+    padding: 2%;
+   }
+   #conteudo img {
+    margin-bottom: 150px;
+    justify-content: left;
+    
+   }
+   #bannertexto {
+    font-size: 20px;
+    color: rgb(95, 95, 95);
+    font-weight: lighter;
+    margin: 18px 0;
+   }
+   .footer {
+    background-color: white;
+    text-align: center;
+    border-radius: 32px;
+    padding: 20px;
+   }
+   .footer i {
+    font-size:30px;
+    padding: 25px;
+    margin: 3px;
+    border-radius: 10px;
+   }
+   .footer a {
+    color: black;
+   }
+   .footer p {
+    margin-top: 10px;
+    color: rgb(82, 82, 82);
+   }
+   /* Para quando a tela for menor que 830px */
+   @media(max-width: 830px) {
+    /* Menu Mobile */
+        nav ul {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: white;
+            width: 100%;
+            height: 100%;
+            flex-direction: column; /* Deixa oas opções uma abaixo da outra */
+            align-items: center;
+            justify-content: center; 
+        }
+        nav ul a {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        nav .menu-icon {
+            display: block;
+        }
+   }

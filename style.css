@@ -15,7 +15,7 @@
     background-attachment: fixed;
    }
    nav {
-    display: flex; /*Elementos do site um ao lado do outrop*/
+    display: flex; /*Elementos do site um ao lado do outro*/
     align-items: center; /*Ajusta itens*/
     justify-content:center; /*Local dos elementos*/
     padding-top: 8px;
@@ -67,7 +67,7 @@
    .historia {
     display: flex;
     align-items: center;
-    
+    justify-content: center;
    }
    .historia .textohistoria {
     width: 50%;
@@ -75,15 +75,15 @@
    }
    .historia .textohistoria h2 {
     margin-bottom: 0 auto;
-    
    }
-   .historia .imghistoria {
-     width: 50%;
-     
+   .historia .textohistoria h2, h3, .imghistoria {
+    background-color: #1e8c13;
+        
    }
    .historia .imghistoria img {
-    width: 100%;
+    width: 20%;
     border-radius: 100px;
+    
    }
    /* IDs */
    #btnhinferior, #btncosme {

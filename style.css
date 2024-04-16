@@ -5,10 +5,10 @@
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
    }
-   body {
+body { 
     background-color: white;
-   }
-   header {
+}
+   .indexheader {
     background-image: url('/Images/simbol.png');
     background-position: center;
     background-size: cover; /*Toda altura e largura disponível*/
@@ -65,25 +65,27 @@
     background-color: #e92626; /*Altera a cor do elemento ao passar o mouse*/
    }
    .historia {
+    background-color: white;
+    border-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
    }
    .historia .textohistoria {
     width: 50%;
-    padding: 0 40px;
+    padding-right: 40px;
    }
-   .historia .textohistoria h2 {
-    margin-bottom: 0 auto;
+   .historia .textohistoria p {
+    margin: 18px 0;
+    color: rgb(89, 86, 86);
    }
-   .historia .textohistoria h2, h3, .imghistoria {
-    background-color: #1e8c13;
-        
+   .historia .imghistoria {
+    width: 50%;
    }
    .historia .imghistoria img {
-    width: 20%;
-    border-radius: 100px;
+    width: 70%;
     
+    border-radius: 23px;
    }
    /* IDs */
    #btnhinferior, #btncosme {
@@ -172,7 +174,7 @@
             align-items: center;
             justify-content: center; 
             clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%, 100% 53%);
-            transition: 0.5s;
+            transition: 0.3s;
         }
         .open {
             clip-path: polygon(52% 0, 100% 0%, 100% 100%, 0 100%, 0 49%);
@@ -191,3 +193,26 @@
             right: 28px;
         }
    }
+
+   /*Inicio Página Sobre*/
+   .sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+   .sobre .sobre-text {
+    width: 50%;
+    padding-right: 40px;
+   }
+   .sobre .sobre-text p {
+    margin: 18px 0;
+    color: rgb(89, 86, 86);
+   }
+   .sobre .sobre-img {
+    width: 50%;
+   }
+   .sobre .sobre-img img {
+    width: 100%;
+    border-radius: 20px;
+   }
+   /*Final Página Sobre*/

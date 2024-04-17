@@ -9,11 +9,10 @@ body {
     background-color: white;
 }
 .indexheader {
-    background-image: url('/Images/simbol.png');
+    background-image: url('/Images/fundo2.png');
     background-position: center;
     background-size: cover; /*Toda altura e largura disponível*/
     background-attachment: fixed;
-    margin-top: 10px;
 }
 nav {
     display: flex; /*Elementos do site um ao lado do outro*/
@@ -67,7 +66,7 @@ nav .close-icon {
     background-color: #e92626; /*Altera a cor do elemento ao passar o mouse*/
 }
 .historia {
-    background-color: white;
+    background-color:white;
     border-radius: 20px;
     display: flex;
     align-items: center;

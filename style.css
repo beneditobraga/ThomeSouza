@@ -70,12 +70,21 @@ nav .close-icon {
     border-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .historia .textohistoria {
-    width: 50%;
-    padding-right: 40px;
+    width: 100%;
+    padding-right: 0px;
+    text-align: center;
+    
 }
+.historia .textohistoria h2 {
+    margin-top: 10px;
+    font-size: 15px;
+    color: gray;
+    
+}
+
 .historia .textohistoria p {
     margin: 18px 0;
     color: rgb(89, 86, 86);
@@ -83,6 +92,7 @@ nav .close-icon {
 .historia .imghistoria {
     width: 50%;
 }
+/* Retirado */
 .historia .imghistoria img {
     width: 70%;
     border-radius: 23px;

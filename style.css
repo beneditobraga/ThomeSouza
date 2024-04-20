@@ -5,9 +5,8 @@
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
    }
-/* Caso não carregue a imagem de fundo */
 body { 
-    background-color: white; 
+    background-color: white; /* Caso não carregue a imagem de fundo */
 }
 .indexheader {
     background-image: url('/Images/fundo2.png');
@@ -25,26 +24,28 @@ body {
     margin-left: 20px;
     margin-top: 30px;
 }
-.nav {
+
+/* Home Start */
+.start {
     display: flex; /*Elementos do site um ao lado do outro*/
     align-items: center; /*Ajusta itens*/
     justify-content:center; /*Local dos elementos*/
     padding-top: 8px;
-    
 }
-.nav ul {
+.start ul {
     display: flex;
     align-items: center;
 }
-.nav ul a {
+.start ul a {
     color: black;
     border-color: red;
     margin: 0 20px; /*Espaçamento entre as opções*/
-    font-size: 15px;
+    font-size: 20px;
     display: block; /*Não deixa cor no texto após clicar no link*/
+    padding: 18px;
     
 }
-.nav ul a:not(.btn):after {
+.start ul a:not(.btn):after {
     content: "";
     background-color: red;
     height: 3px;
@@ -52,29 +53,154 @@ body {
     display: block;
     transition: 0.6s;
 }
-.nav ul a:hover::after {
+.start ul a:hover::after {
     width: 100%;
 }
 /* Menu Mobile */
-.nav .menu-icon {
+.start .menu-icon {
     cursor: pointer;
     font-size: 25px;
     display: none;
 }
-.nav .close-icon {
+.start .close-icon {
     display: none;
     font-size: 30px;
 }
-.btn {
+.start .btn {
     background-color: #C80000;
     padding: 15px 20px;
     border-radius: 14px;
     display: inline-block;
     transition: 0.4s; /*Animação ao passar o mouse sobre*/
 }
-.btn:hover {
+.start .btn:hover {
     background-color: #e92626; /*Altera a cor do elemento ao passar o mouse*/
 }
+.start .btncosme {
+    color: white;
+    background-color: #C80000;
+    padding: 8px 18px;
+    border-radius: 9px;
+    display: inline-block;
+    transition: 0.3s;
+}
+.start .btncosme {
+    background-color: #1e8c13;
+    padding: 12px 11px;
+    font-size: 20px;
+    animation: animate-outline 0.8s ease-out infinite;
+}
+.start .btncosme:hover {
+    background-color: #2bc51c;
+}
+@keyframes animate-outline {
+    from {
+        outline: 0px solid #2bc51c;
+    }
+    to {
+        outline: 7.5px solid #c1debe;
+    }
+}
+/* End Start */
+/* Home Presentation */
+.presentation {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px 33px;
+    display: block;
+    line-height: 30px;
+}
+.presentation .TextTendaDeUmbanda {
+    font-size: 15px;
+    color: rgb(96, 90, 90);
+    font-weight: lighter;
+    margin: 18px 0;
+}
+.presentation .btndoe {
+    color: white;
+    background-color: #C80000;
+    padding: 5px 18px;
+    border-radius: 9px;
+    display: inline-block;
+    transition: 0.3s;
+}
+.presentation .btndoe:hover {
+    background-color: #e92626;
+}
+.presentation .btndoe {
+    background-color: #e92626;
+    padding: 8px 22px;
+    font-size: 18px;
+    animation: animate-outline 1s ease-out infinite;
+}
+@keyframes animate-outline {
+    from {
+        outline: 0px solid #e92626;
+    }
+    to {
+        outline: 5.5px solid #ddc4c4;
+    }
+}
+/* End Home Presentation */
+/* Start Seção 01 Pena Verde */
+.penaverde {
+    background-color:white;
+    border-radius: 20px;
+    display: block;
+}
+.penaverde img {
+    width: 60%;
+    margin: 0 80px;
+    margin-top: 20px;
+}
+.penaverde p {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(110, 103, 103);
+    font-style: italic;
+    padding: 3px;
+    margin: 5px;
+}
+/* End Seção 01 Pena Verde */
+.aumbanda {
+    background-color:white;
+    border-radius: 20px;
+}
+.aumbanda h2 {
+    font-size: 20px;
+    color: rgb(112, 106, 106);
+    text-align: center;
+    padding: 17px;
+}
+.aumbanda ul li{
+    text-align: left;
+    font-size: 13px;
+    color: rgb(110, 103, 103);
+    font-style: italic;
+    padding: 3px;
+    margin: 5px 35px;
+
+}
+.aumbanda .return {
+    color: #1e8c13;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .historia {
     background-color:white;
     border-radius: 20px;
@@ -92,7 +218,6 @@ body {
     margin-top: 10px;
     font-size: 15px;
     color: gray;
-    
 }
 
 .historia .textohistoria p {
@@ -102,55 +227,10 @@ body {
 .historia .imghistoria {
     width: 50%;
 }
-/* Retirado */
-.historia .imghistoria img {
-    width: 70%;
-    border-radius: 23px;
-}
-/* IDs */
-#btnhinferior, #btncosme {
-    color: white;
-    background-color: #C80000;
-    padding: 8px 18px;
-    border-radius: 9px;
-    display: inline-block;
-    transition: 0.3s;
-}
-#btnhinferior:hover {
-    background-color: #e92626;
-}
-#btncosme {
-    background-color: #1e8c13;
-    padding: 17px 11px;
-    font-size: 17px;
-    animation: animate-outline 0.8s ease-out infinite;
-}
-#btncosme:hover {
-    background-color: #2bc51c;
-}
-@keyframes animate-outline {
-    from {
-        outline: 0px solid #2bc51c;
-    }
-    to {
-        outline: 7.5px solid #c1debe;
-    }
-}
-#apresentacao {
-    display: flex;
-    justify-content: center;
-    margin: 50px auto;
-    text-align: center;
-    padding: 135px 30px;
-    display: block;
-    line-height: 30px;
-}
-#bannertexto {
-    font-size: 15px;
-    color: rgb(130, 128, 128);
-    font-weight: lighter;
-    margin: 18px 0;
-}
+
+
+
+
 .redes {
     text-align: center;
     padding: 40px;
@@ -178,33 +258,33 @@ body {
 /* Para quando a tela for menor que 830px */
 @media(max-width: 830px) {
  /* Menu Mobile */
-    nav ul {
-            position: fixed;
-            top: 0;
-            left: 0;
-            background: white;
-            width: 100%;
-            height: 100%;
-            flex-direction: column; /* Deixa oas opções uma abaixo da outra */
-            align-items: center;
-            justify-content: center; 
-            clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%, 100% 53%);
-            transition: 0.5s;
+    .start ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: white;
+        width: 100%;
+        height: 100%;
+        flex-direction: column; /* Deixa oas opções uma abaixo da outra */
+        align-items: center;
+        justify-content: center; 
+        clip-path: inset(0 0 0 100%);
+        transition: 0.5s;
     }
-    .open {
-            clip-path: polygon(52% 0, 100% 0%, 100% 100%, 0 100%, 0 49%);
+    .start .open {
+        clip-path: inset(0 0 0 0);
     }
-    nav ul a {
-            margin: 27px 0;
-            font-size: 18px;
+    .start ul a {
+            margin: 16px 0;
+            font-size: 20px;
     }
-    nav .menu-icon {
+    .start .menu-icon {
             display: block;
             margin-bottom: 5%;
             margin-right: 20px;
             
     }        
-    nav .close-icon {
+    .start .close-icon {
             display: block;
             position: absolute;
             top: 46px;

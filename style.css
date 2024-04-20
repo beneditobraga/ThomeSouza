@@ -5,8 +5,9 @@
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
    }
+/* Caso não carregue a imagem de fundo */
 body { 
-    background-color: white;
+    background-color: white; 
 }
 .indexheader {
     background-image: url('/Images/fundo2.png');
@@ -14,18 +15,28 @@ body {
     background-size: cover; /*Toda altura e largura disponível*/
     background-attachment: fixed;
 }
-nav {
+.conteudo {
+    max-width: 1300px; /*Largura máxima*/
+    margin: 0 auto; /*Margem automárica para os dois lados*/
+    padding: 2%;
+}
+.conteudo .mainlogo {
+    max-width: 60%;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.nav {
     display: flex; /*Elementos do site um ao lado do outro*/
     align-items: center; /*Ajusta itens*/
     justify-content:center; /*Local dos elementos*/
     padding-top: 8px;
     
 }
-nav ul {
+.nav ul {
     display: flex;
     align-items: center;
 }
-nav ul a {
+.nav ul a {
     color: black;
     border-color: red;
     margin: 0 20px; /*Espaçamento entre as opções*/
@@ -33,7 +44,7 @@ nav ul a {
     display: block; /*Não deixa cor no texto após clicar no link*/
     
 }
-nav ul a:not(.btn):after {
+.nav ul a:not(.btn):after {
     content: "";
     background-color: red;
     height: 3px;
@@ -41,20 +52,19 @@ nav ul a:not(.btn):after {
     display: block;
     transition: 0.6s;
 }
-nav ul a:hover::after {
+.nav ul a:hover::after {
     width: 100%;
 }
 /* Menu Mobile */
-nav .menu-icon {
+.nav .menu-icon {
     cursor: pointer;
     font-size: 25px;
     display: none;
 }
-nav .close-icon {
+.nav .close-icon {
     display: none;
     font-size: 30px;
 }
-/* CLASSs */
 .btn {
     background-color: #C80000;
     padding: 15px 20px;
@@ -135,16 +145,6 @@ nav .close-icon {
     display: block;
     line-height: 30px;
 }
-#conteudo {
-    max-width: 1300px; /*Largura máxima*/
-    margin: 0 auto; /*Margem automárica para os dois lados*/
-    padding: 2%;
-}
-#conteudo img {
-    max-width: 60%;
-    margin-left: 20px;
-    margin-top: 30px;
-}
 #bannertexto {
     font-size: 15px;
     color: rgb(130, 128, 128);
@@ -211,26 +211,3 @@ nav .close-icon {
             right: 28px;
     }
 }
-
-/*Inicio Página Sobre*/
-.sobre {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.sobre .sobre-text {
-    width: 50%;
-    padding-right: 40px;
-}
-.sobre .sobre-text p {
-    margin: 18px 0;
-    color: rgb(89, 86, 86);
-}
-.sobre .sobre-img {
-    width: 50%;
-}
-.sobre .sobre-img img {
-    width: 100%;
-    border-radius: 20px;
-}
-/*Final Página Sobre*/

@@ -4,21 +4,25 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-   }
+}
+
 body { 
     background-color: white; /* Caso não carregue a imagem de fundo */
 }
+
 .indexheader {
     background-image: url('/Images/fundo2.png');
     background-position: center;
     background-size: cover; /*Toda altura e largura disponível*/
     background-attachment: fixed;
 }
+
 .conteudo {
     max-width: 1300px; /*Largura máxima*/
     margin: 0 auto; /*Margem automárica para os dois lados*/
     padding: 2%;
 }
+
 .conteudo .mainlogo {
     max-width: 60%;
     margin-left: 20px;
@@ -32,10 +36,12 @@ body {
     justify-content:center; /*Local dos elementos*/
     padding-top: 8px;
 }
+
 .start ul {
     display: flex;
     align-items: center;
 }
+
 .start ul a {
     color: black;
     border-color: red;
@@ -45,6 +51,7 @@ body {
     padding: 18px;
     
 }
+
 .start ul a:not(.btn):after {
     content: "";
     background-color: red;
@@ -53,19 +60,23 @@ body {
     display: block;
     transition: 0.6s;
 }
+
 .start ul a:hover::after {
     width: 100%;
 }
+
 /* Menu Mobile */
 .start .menu-icon {
     cursor: pointer;
     font-size: 25px;
     display: none;
 }
+
 .start .close-icon {
     display: none;
     font-size: 30px;
 }
+
 .start .btn {
     background-color: #C80000;
     padding: 15px 20px;
@@ -73,9 +84,11 @@ body {
     display: inline-block;
     transition: 0.4s; /*Animação ao passar o mouse sobre*/
 }
+
 .start .btn:hover {
     background-color: #e92626; /*Altera a cor do elemento ao passar o mouse*/
 }
+
 .start .btncosme {
     color: white;
     background-color: #C80000;
@@ -84,24 +97,24 @@ body {
     display: inline-block;
     transition: 0.3s;
 }
+
 .start .btncosme {
     background-color: #1e8c13;
-    padding: 12px 11px;
+    padding: 15px 11px;
     font-size: 20px;
-    animation: animate-outline 0.8s ease-out infinite;
 }
+
 .start .btncosme:hover {
     background-color: #2bc51c;
 }
-@keyframes animate-outline {
-    from {
-        outline: 0px solid #2bc51c;
-    }
-    to {
-        outline: 7.5px solid #c1debe;
-    }
+
+.start button {
+    border: none;
+    background-color: white;
 }
 /* End Start */
+
+
 /* Home Presentation */
 .presentation {
     display: flex;
@@ -112,12 +125,14 @@ body {
     display: block;
     line-height: 30px;
 }
+
 .presentation .TextTendaDeUmbanda {
     font-size: 15px;
     color: rgb(96, 90, 90);
     font-weight: lighter;
     margin: 18px 0;
 }
+
 .presentation .btndoe {
     color: white;
     background-color: #C80000;
@@ -126,15 +141,23 @@ body {
     display: inline-block;
     transition: 0.3s;
 }
+
 .presentation .btndoe:hover {
     background-color: #e92626;
 }
+
 .presentation .btndoe {
     background-color: #e92626;
     padding: 8px 22px;
     font-size: 18px;
     animation: animate-outline 1s ease-out infinite;
 }
+
+.presentation button {
+    border: none;
+    background-color: white;
+}
+
 @keyframes animate-outline {
     from {
         outline: 0px solid #e92626;
@@ -144,17 +167,21 @@ body {
     }
 }
 /* End Home Presentation */
+
+
 /* Start Seção 01 Pena Verde */
 .penaverde {
     background-color:rgba(255, 255, 255, 0.764);
     border-radius: 20px;
     display: block;
 }
+
 .penaverde img {
     width: 60%;
     margin: 0 80px;
     margin-top: 20px;
 }
+
 .penaverde p {
     text-align: center;
     font-size: 15px;
@@ -164,17 +191,21 @@ body {
     margin: 5px;
 }
 /* End Seção 01 Pena Verde */
+
+
 /* Start Seção 02 A Umbanda */
 .aumbanda {
     background-color:rgba(255, 255, 255, 0.676);
     border-radius: 20px;
 }
+
 .aumbanda h2 {
     font-size: 20px;
     color: rgb(112, 106, 106);
     text-align: center;
     padding: 17px;
 }
+
 .aumbanda ul li{
     text-align: left;
     font-size: 13px;
@@ -183,28 +214,33 @@ body {
     padding: 3px;
     margin: 5px 35px;
 }
+
 .aumbanda .return {
     color: #1e8c13;
     font-weight: bold;
 }
 /* End Seção 02 A Umbanda */
+
+
+/* Start Seção 03 Homenagens */
 .homenagens {
-    background-color:rgba(255, 255, 255, 0.572);
+    background-color:rgba(255, 255, 255, 0.474);
     border-radius: 20px;
     display: block;
 }
+
 .homenagens img {
     width: 100%;
-    margin: 0 0px;
-    margin-top: 0px;
     border-radius: 15px;
 }
+
 .homenagens h3 {
     font-size: 20px;
     color: rgb(112, 106, 106);
     text-align: center;
     padding: 10px;
 }
+
 .homenagens p {
     text-align: left;
     font-size: 13px;
@@ -212,81 +248,107 @@ body {
     padding: 3px;
     margin: 5px 35px;
 }
+/* End Seção 03 Homenagens */
 
 
-
-
-
-
-
-
-
-
-
-.historia {
-    background-color:white;
+/* Start Seção 04 Cosme e Damião */
+.cosmeedamiao {
+    background-color:rgba(255, 255, 255, 0.585);
     border-radius: 20px;
+    display: block;
+}
+
+.cosmeedamiao .imagenscosme {
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.historia .textohistoria {
     width: 100%;
-    padding-right: 0px;
+}
+
+.cosmeedamiao img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.cosmeedamiao h3 {
+    font-size: 30px;
+    color: rgb(112, 106, 106);
     text-align: center;
-    
-}
-.historia .textohistoria h2 {
-    margin-top: 10px;
-    font-size: 15px;
-    color: gray;
+    padding: 20px;
 }
 
-.historia .textohistoria p {
-    margin: 18px 0;
-    color: rgb(89, 86, 86);
+.cosmeedamiao p {
+    text-align: left;
+    font-size: 13px;
+    color: rgb(110, 103, 103);
+    padding: 3px;
+    margin: 5px 35px;
 }
-.historia .imghistoria {
-    width: 50%;
-}
+/* End Seção 04 Cosme e Damião */
 
 
-
-
-
-
-
-
-/* Start Redes */
-.redes {
-    text-align: center;
-    padding: 40px;
-    background-color: rgba(255, 255, 255, 0.579);
+/* Start Seção 05 Cronograma */
+.cronograma {
+    background-color:rgba(255, 255, 255, 0.254);
     border-radius: 20px;
+    display: block;
+}
+
+.cronograma img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.cronograma h2 {
+    font-size: 30px;
+    color: rgb(52, 48, 48);
+    text-align: center;
+    padding: 15px;
+}
+/* End Seção 05 Cronograma */
+
+
+/* Start Footer */
+.footer {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.274);
+    border-radius: 20px;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 18px;
+    color: rgba(38, 36, 36, 0.87);
+    padding: 0px;
+    margin: 0px 3px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }   
-.redes i {
+
+.footer i {
     font-size: 50px;
     padding: 10px;
     margin: 0px;
 }
-.redes a {
+
+.footer a {
     color: black;
     font-size: 0px;
     margin: 0 10px;
 }
-.redes h3 {
-    color: rgb(110, 109, 109);
+
+.footer h3 {
+    color: rgba(0, 0, 0, 0.359);
     font-size: 18px;
     text-align: center;
     padding: 30px;
 }
-/* End Redes */
-/* Start Footer */
-.footer {
-    background-color: rgba(0, 0, 0, 0.648);
-    padding: 100px;
+
+.footer .links a {
+    background-color: #1e8c13;
 }
 /* End Footer */
+
+
 /* Para quando a tela for menor que 830px */
 @media(max-width: 830px) {
  /* Version Mobile */
@@ -303,19 +365,23 @@ body {
         clip-path: inset(0 0 0 100%);
         transition: 0.5s;
     }
+
     .start .open {
         clip-path: inset(0 0 0 0);
     }
+
     .start ul a {
             margin: 16px 0;
             font-size: 20px;
     }
+
     .start .menu-icon {
             display: block;
             margin-bottom: 5%;
             margin-right: 20px;
             
-    }        
+    }  
+
     .start .close-icon {
             display: block;
             position: absolute;
@@ -323,3 +389,4 @@ body {
             right: 28px;
     }
 }
+

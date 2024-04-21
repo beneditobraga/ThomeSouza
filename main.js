@@ -8,8 +8,7 @@ function closeMenu(){
     ul.classList.remove('open');
 }
 
-let historia = document.querySelector('.selecthistoria');
+const btndoe = document.getElementsByClassName('btndoe');
+const chavepix = document.getElementsByClassName('chavepix');
 
-function irHistoria(){
-    historia.classList('historia')
-}
+

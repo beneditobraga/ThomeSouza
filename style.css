@@ -234,6 +234,14 @@ body {
     border-radius: 15px;
 }
 
+.homenagens .textohomenagem {
+    display: flex;
+}
+
+.homenagens .desenhopaithome {
+    width: 50%;
+}
+
 .homenagens h3 {
     font-size: 20px;
     color: rgb(112, 106, 106);

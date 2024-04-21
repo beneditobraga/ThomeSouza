@@ -146,7 +146,7 @@ body {
 /* End Home Presentation */
 /* Start Seção 01 Pena Verde */
 .penaverde {
-    background-color:white;
+    background-color:rgba(255, 255, 255, 0.764);
     border-radius: 20px;
     display: block;
 }
@@ -164,8 +164,9 @@ body {
     margin: 5px;
 }
 /* End Seção 01 Pena Verde */
+/* Start Seção 02 A Umbanda */
 .aumbanda {
-    background-color:white;
+    background-color:rgba(255, 255, 255, 0.676);
     border-radius: 20px;
 }
 .aumbanda h2 {
@@ -181,15 +182,36 @@ body {
     font-style: italic;
     padding: 3px;
     margin: 5px 35px;
-
 }
 .aumbanda .return {
     color: #1e8c13;
     font-weight: bold;
 }
-
-
-
+/* End Seção 02 A Umbanda */
+.homenagens {
+    background-color:rgba(255, 255, 255, 0.572);
+    border-radius: 20px;
+    display: block;
+}
+.homenagens img {
+    width: 100%;
+    margin: 0 0px;
+    margin-top: 0px;
+    border-radius: 15px;
+}
+.homenagens h3 {
+    font-size: 20px;
+    color: rgb(112, 106, 106);
+    text-align: center;
+    padding: 10px;
+}
+.homenagens p {
+    text-align: left;
+    font-size: 13px;
+    color: rgb(110, 103, 103);
+    padding: 3px;
+    margin: 5px 35px;
+}
 
 
 
@@ -231,10 +253,17 @@ body {
 
 
 
+
+
+
+
+/* Start Redes */
 .redes {
     text-align: center;
     padding: 40px;
-}
+    background-color: rgba(255, 255, 255, 0.579);
+    border-radius: 20px;
+}   
 .redes i {
     font-size: 50px;
     padding: 10px;
@@ -251,18 +280,21 @@ body {
     text-align: center;
     padding: 30px;
 }
+/* End Redes */
+/* Start Footer */
 .footer {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.648);
     padding: 100px;
 }
+/* End Footer */
 /* Para quando a tela for menor que 830px */
 @media(max-width: 830px) {
- /* Menu Mobile */
+ /* Version Mobile */
     .start ul {
         position: fixed;
         top: 0;
         left: 0;
-        background: white;
+        background: rgb(255, 255, 255);
         width: 100%;
         height: 100%;
         flex-direction: column; /* Deixa oas opções uma abaixo da outra */

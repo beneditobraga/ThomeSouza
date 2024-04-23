@@ -285,6 +285,33 @@ body {
     margin-bottom: 20px;
 }
 
+.cosmeedamiao .container-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    justify-content: center;
+}
+
+.cosmeedamiao .container-popup .active {
+    display: flex;
+}
+
+.cosmeedamiao .popup {
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+.cosmeedamiao .popup button {
+    background-color: #1e8c13;
+    color: greenyellow;
+
+}
+
 @keyframes animate-outline {
     from {
         outline: 0px solid #e92626;

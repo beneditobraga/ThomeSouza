@@ -367,6 +367,14 @@ body {
     padding: 15px;
 }
 
+.cronograma p {
+    text-align: center;
+    font-size: 17px;
+    color: rgba(0, 128, 0, 0.644);
+    font-weight: bold;
+
+}
+
 /* End Seção Cronograma */
 
 
@@ -401,7 +409,7 @@ body {
 }
 
 .footer h3 {
-    color: rgba(0, 0, 0, 0.359);
+    color: rgba(0, 0, 0, 0.716);
     font-size: 18px;
     text-align: center;
     padding: 30px;

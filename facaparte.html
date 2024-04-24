@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pai Thomé de Souza</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="/Images/TitleWeb.png">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.5.0/css/all.css">
+
+</head>
+    <body>
+       <header class="indexheader">
+            <div class="conteudo">
+                <!-- Home Start -->
+                <nav class="start">
+                    <a href="index.html">
+                        <img class="mainlogo" src="/Images/logo.png" alt="Logo">
+                    </a>
+                    <ul>
+                        <a href="index.html">HOME</a>
+                        <a href="artigos.html">ARTIGOS</a>
+                        <a href="#paitome" onclick="closeMenu()">SOBRE</a>
+                        <a class="btncosme" href="#cosmeedamiao" onclick="closeMenu()">Cosme e Damião</a>
+                        <!-- Comentado, caso necessite retornar -->
+                        <!--<button class="btnmodal" onclick="openModal()"><a class="btn" href="#" style="color: white; border-color: black;">Doe</a></button>-->
+                        <a class="btn" href="#footer" onclick="closeMenu()" style="color: white; border-color: black;">CONTATOS</a>
+                        <div class="close-icon" onclick="closeMenu()">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </div>
+                    </ul>
+                    <!-- Botão Responsivo --> 
+                    <div class="menu-icon" onclick="openMenu()">
+                        <a href="#"><i class="fa-solid fa-bars" style="color: rgb(91, 86, 86); margin: 10px;"></i></a>
+                    </div>
+                </nav>
+                <!-- End Start -->
+                <!-- Start Seção Construção Artigos -->
+                <section class="construcao-artigos">
+                    <button class="volta-index"><a href="index.html">Voltar</a></button>
+                    <div>
+                        <img src="Images/Construções/EmConsArtig.png" alt="Págima em Construção...">
+                        <p>Em breve formulários e detalhes de como participar...</p>
+                        <br>
+                    </div>    
+                </section>
+                <br>
+                <br>
+                <!-- End Seção Construção Artigos -->
+                <!-- Start Footer -->
+                <footer>
+                <div class="footer" id="footer">
+                    <br>
+                        <p>Rua madre de Deus, 534 - Mooca</p>
+                        <p>São Paulo - SP, 03119-000</p>
+                        <hr>
+                        <br>
+                        <p>paithomedesouza1774@gmail.com</p>
+                        <hr>                 
+                    <h3>Sigam nossas redes</h3>
+                    <div class="links">
+                        <a href="https://www.facebook.com/share/bP8rNStt2g4vUqVk/?mibextid=qi2Omg"><i class="fa-brands fa-facebook" style="color: rgb(39, 39, 155);"></i></a>
+                        <a href="https://www.instagram.com/thome.souza.1/"><i class="fa-brands fa-instagram" style="color: rgb(150, 57, 33)"></i></a>
+                        <a href="https://www.youtube.com/@paithomedesouza556"><i class="fa-brands fa-youtube" style="color: rgb(240, 13, 13);"></i></a>
+                    </div>
+                </div>
+                </footer>
+                <!-- End Footer -->
+       </header>
+       <script src="main.js"></script>   
+    </body>
+</html>

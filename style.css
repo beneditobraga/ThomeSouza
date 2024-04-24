@@ -138,7 +138,7 @@ body {
 
 /* Start Seção Pena Verde */
 .penaverde {
-    background-color:rgba(255, 255, 255, 0.764);
+    background-color:rgba(255, 255, 255, 0.797);
     border-radius: 20px;
     display: block;
 }
@@ -162,7 +162,7 @@ body {
 
 /* Start Seção A Umbanda */
 .aumbanda {
-    background-color:rgba(255, 255, 255, 0.676);
+    background-color:rgba(255, 255, 255, 0.759);
     border-radius: 20px;
 }
 
@@ -175,7 +175,7 @@ body {
 
 .aumbanda ul li{
     text-align: left;
-    font-size: 13px;
+    font-size: 15;
     color: rgb(110, 103, 103);
     font-style: italic;
     padding: 3px;
@@ -230,12 +230,13 @@ body {
     width: 50%;
     margin-top: 20px;
     margin-right: 10px;
+    margin-left: 10px;
     
 }
 
 .homenagens .text02 {
-    width: 100%;
-    margin-top: 10px;
+    width: 95%;
+    margin-top: 10px; 
 }
 
 
@@ -244,7 +245,7 @@ body {
 
 /* Start Seção Cosme e Damião */
 .cosmeedamiao {
-    background-color:rgba(255, 255, 255, 0.744);
+    background-color:rgba(255, 255, 255, 0.726);
     border-radius: 20px;
     display: block;
 }
@@ -278,9 +279,10 @@ body {
 
 .cosmeedamiao p {
     text-align: justify;
-    font-size: 15px;
+    font-size: 17px;
     color: rgb(110, 103, 103);
-    padding: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .cosmeedamiao .btndoe {
@@ -420,6 +422,41 @@ body {
 }
 /* End Footer */
 
+
+/* PÁGINS ARTIGOS */
+.construcao-artigos {
+    background-color:rgb(255, 255, 255);
+    border-radius: 20px;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.construcao-artigos img {
+    width: 100%;
+}
+
+.construcao-artigos p {
+    text-align: justify;
+    font-size: 17px;
+    color: rgba(81, 75, 75, 0.801);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.construcao-artigos .volta-index {
+    align-items: left;
+    width: 20%;
+    margin: 20px;
+    padding: 7px;
+    background-color: rgba(0, 81, 255, 0.952);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.construcao-artigos .volta-index a {
+    color:rgb(255, 255, 255);
+}
 
 /* Para quando a tela for menor que 830px */
 @media(max-width: 830px) {

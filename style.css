@@ -127,9 +127,10 @@ body {
 }
 
 .presentation .TextTendaDeUmbanda {
-    font-size: 18px;
+    font-size: 20px;
     color: rgba(0, 0, 0, 0.486);
     margin: 18px 0;
+    
 }
 
 /* End Home Presentation */
@@ -167,7 +168,7 @@ body {
 
 .aumbanda h2 {
     font-size: 20px;
-    color: rgb(112, 106, 106);
+    color: rgb(96, 92, 92);
     text-align: center;
     padding: 17px;
 }
@@ -190,7 +191,7 @@ body {
 
 /* Start Seção Homenagens */
 .homenagens {
-    background-color:rgba(255, 255, 255, 0.474);
+    background-color:rgba(255, 255, 255, 0.761);
     border-radius: 20px;
     display: block;
     margin-top: -50px;
@@ -207,28 +208,43 @@ body {
 
 .homenagens .desenhopaithome {
     width: 50%;
+    height: 100%;
+    margin-top: 15px;
 }
 
 .homenagens h3 {
     font-size: 20px;
-    color: rgb(112, 106, 106);
-    text-align: leff;
-    padding: 10px;
+    color: rgb(9, 8, 8);
+    text-align: center;
+    padding: 3.5px;
+    background-color:rgba(240, 240, 9, 0.429);
+    border-radius: 15px;
+    margin-top: 12px;
 }
 
 .homenagens p {
-    text-align: left;
-    font-size: 13px;
-    color: rgb(110, 103, 103);
+    text-align: justify;
+    font-size: 15px;
+    color: rgb(92, 85, 85);
     padding: 3px;
-    margin: 5px 35px;
+    width: 50%;
+    margin-top: 20px;
+    margin-right: 10px;
+    
 }
+
+.homenagens .text02 {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
 /* End Seção Homenagens */
 
 
 /* Start Seção Cosme e Damião */
 .cosmeedamiao {
-    background-color:rgba(255, 255, 255, 0.585);
+    background-color:rgba(255, 255, 255, 0.744);
     border-radius: 20px;
     display: block;
 }
@@ -250,12 +266,21 @@ body {
     padding: 20px;
 }
 
+.cosmeedamiao h4 {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: rgba(73, 67, 67, 0.941);
+    font-size: 17px;
+    margin-left: 15px;
+    margin-right: 30px;
+}
+
 .cosmeedamiao p {
-    text-align: left;
-    font-size: 13px;
+    text-align: justify;
+    font-size: 15px;
     color: rgb(110, 103, 103);
     padding: 3px;
-    margin: 5px 35px;
 }
 
 .cosmeedamiao .btndoe {
@@ -325,7 +350,7 @@ body {
 
 /* Start Seção Cronograma */
 .cronograma {
-    background-color:rgba(255, 255, 255, 0.254);
+    background-color:rgba(255, 255, 255, 0.711);
     border-radius: 20px;
     display: block;
 }
@@ -341,6 +366,7 @@ body {
     text-align: center;
     padding: 15px;
 }
+
 /* End Seção Cronograma */
 
 

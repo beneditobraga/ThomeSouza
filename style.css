@@ -10,6 +10,9 @@ body {
     background-color: white; /* Caso não carregue a imagem de fundo */
 }
 
+/* Web Desktop */
+
+
 .indexheader {
     background-image: url('/Images/fundo2.png');
     background-position: center;
@@ -46,10 +49,9 @@ body {
     color: black;
     border-color: red;
     margin: 0 20px; /*Espaçamento entre as opções*/
-    font-size: 20px;
+    font-size: 18px;
     display: block; /*Não deixa cor no texto após clicar no link*/
     padding: 18px;
-    
 }
 
 .start ul a:not(.btn):after {
@@ -91,16 +93,11 @@ body {
 
 .start .btncosme {
     color: white;
-    background-color: #C80000;
-    padding: 8px 18px;
+    padding: 15px 20px;
     border-radius: 9px;
     display: inline-block;
     transition: 0.3s;
-}
-
-.start .btncosme {
     background-color: #1e8c13;
-    padding: 15px 11px;
     font-size: 20px;
 }
 
@@ -195,6 +192,7 @@ body {
     border-radius: 20px;
     display: block;
     margin-top: -50px;
+    width: 100%;
 }
 
 .homenagens img {
@@ -210,6 +208,9 @@ body {
     width: 50%;
     height: 100%;
     margin-top: 15px;
+    @media(min-width:831px){
+        width: 20%;
+    }
 }
 
 .homenagens h3 {
@@ -232,12 +233,14 @@ body {
     margin-right: 10px;
     margin-left: 10px;
     
+    
 }
 
 .homenagens .text02 {
     width: 95%;
     margin-top: 10px; 
 }
+
 
 
 /* End Seção Homenagens */
@@ -433,25 +436,43 @@ body {
 }
 
 .construcao-artigos img {
-    width: 100%;
+    width: 35%;
+    margin: auto;
+    display: block;
+    padding: 30px;
+    @media(max-width: 830px) {
+        width: 100%;
+        padding: 0px;
+    }
 }
 
 .construcao-artigos p {
-    text-align: justify;
-    font-size: 17px;
+    text-align: center;
+    font-size: 19px;
     color: rgba(81, 75, 75, 0.801);
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    @media(max-width: 830px) {
+        text-align: justify;
+        font-size: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 .construcao-artigos .volta-index {
     align-items: left;
-    width: 20%;
-    margin: 20px;
-    padding: 7px;
+    width: 6%;
+    margin: 40px;
+    padding: 10px;
     background-color: rgba(0, 81, 255, 0.952);
     font-weight: bold;
     border-radius: 10px;
+    @media(max-width: 830px) {
+        width: 20%;
+        margin: 20px;
+        padding: 7px;
+    }
 }
 
 .construcao-artigos .volta-index a {
@@ -497,5 +518,3 @@ body {
             top: 46px;
             right: 28px;
     }
-}
-

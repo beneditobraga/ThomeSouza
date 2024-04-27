@@ -14,7 +14,7 @@ body {
 @media(min-width:831px) {
     .web1 {
         display: flex;
-        
+                
     }
 }
 
@@ -60,6 +60,9 @@ body {
     font-size: 18px;
     display: block; /*Não deixa cor no texto após clicar no link*/
     padding: 18px;
+    @media(min-width: 831px) {
+                
+    }
 }
 
 .start ul a:not(.btn):after {
@@ -107,6 +110,10 @@ body {
     transition: 0.3s;
     background-color: #1e8c13;
     font-size: 20px;
+    @media(min-width:831px) {
+        text-align: center;
+        font-size: 17px;
+    }
 }
 
 .start .btncosme:hover {
@@ -129,13 +136,19 @@ body {
     padding: 20px 33px;
     display: block;
     line-height: 30px;
+    @media(min-width:831px) {
+        padding: 50px;
+    }
 }
 
 .presentation .TextTendaDeUmbanda {
     font-size: 20px;
     color: rgba(0, 0, 0, 0.486);
     margin: 18px 0;
-    
+    @media(min-width:831px) {
+        padding: 20px;
+        margin-top: -70px;
+    }
 }
 
 /* End Home Presentation */
@@ -146,12 +159,22 @@ body {
     background-color:rgba(255, 255, 255, 0.797);
     border-radius: 20px;
     display: block;
+    @media(min-width:831px) {
+        width: 60%;
+        background-color: white;
+        margin-left: 30px;
+    }
 }
 
 .penaverde img {
     width: 60%;
     margin: 0 80px;
     margin-top: 20px;
+    @media(min-width:831px) {
+        width: 50%;
+        margin-left: 150px;
+        
+    }
 }
 
 .penaverde p {
@@ -161,6 +184,9 @@ body {
     font-style: italic;
     padding: 3px;
     margin: 5px;
+    @media(min-width:831px) {
+        font-size: 17px;
+    }
 }
 /* End Seção Pena Verde */
 
@@ -169,6 +195,11 @@ body {
 .aumbanda {
     background-color:rgba(255, 255, 255, 0.759);
     border-radius: 20px;
+    @media(min-width:831px) {
+        background-color: white;
+        width: 60%;
+        margin-right: 30px;
+    }
 }
 
 .aumbanda h2 {
@@ -176,6 +207,10 @@ body {
     color: rgb(96, 92, 92);
     text-align: center;
     padding: 17px;
+    @media(min-width:831px) {
+        padding: 40px;
+        font-size: 23px;
+    }
 }
 
 .aumbanda ul li{
@@ -185,6 +220,11 @@ body {
     font-style: italic;
     padding: 3px;
     margin: 5px 35px;
+    @media(min-width:831px) {
+        padding: 13px;
+        margin-top: 20px;
+        margin-right: 30px;
+    }
 }
 
 .aumbanda .return {
@@ -278,8 +318,7 @@ body {
     display: flex;
     width: 50%;
     @media(min-width:831px) {
-        width: 100%;
-        display: block;
+        display: none;
     }
 }
 
@@ -287,9 +326,15 @@ body {
     width: 100%;
     border-radius: 15px;
     @media(min-width:831px) {
-        width: 30%;
+        display: none;
+    }
+}
+
+.cosmeweb img {
+    display: none;
+    @media(min-width: 831px) {
         display: inline-block;
-       
+        width: 16%;
     }
 }
 
@@ -548,3 +593,5 @@ body {
             top: 46px;
             right: 28px;
     }
+
+    

@@ -6,8 +6,8 @@
 - HTML, CSS, JavaScript
 
 ### Etapas a Realizar
-- Conseguir domínio .org
-- Vínculo com Banco de Dados
+- Domínio .org
+- Vínculo a Banco de Dados
 
 ### Endereço
 - https://thome-souza.vercel.app/

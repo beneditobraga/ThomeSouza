@@ -569,7 +569,7 @@ body {
 }
 
 .lista-artigos {
-    background-color:rgb(255, 255, 255);
+    background-color:rgba(255, 255, 255, 0.67);
     border-radius: 20px;
     display: block;
     margin-top: 30px;
@@ -619,6 +619,14 @@ body {
 
 }
 
+.lista-artigos p {
+    font-size: 17px;
+    text-align: center;
+    margin: 30px;
+    color: #1e6218be;
+    
+}
+
 /* Texto de Artigos */
 
 .textos-artigos {
@@ -666,6 +674,14 @@ body {
     @media(max-width: 830px) {
         font-size: 17px;
     }
+}
+
+.textos-artigos .texto-autor {
+    text-align: right;
+    font-style: italic;
+    font-size: 18px;
+    margin: 30px;
+    color: rgba(0, 0, 0, 0.705);
 }
 
 /* Para quando a tela for menor que 830px */

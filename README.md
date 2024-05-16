@@ -14,4 +14,3 @@
 ### Endereço
 - https://thome-souza.vercel.app/
 
-<h1 style="color: green; font-size: 50px;">Teste</h1>
